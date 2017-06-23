@@ -51,7 +51,7 @@ class Admin extends PaymentDataBuilder
    */
   protected function getStripeCustomerId() {
     $customer = $this->customerRepository->getById($this->adminSession->getCustomerId());
-    $stripeCustomerId = $customer->getCustomAttribute('stripe_customer_id');
+    $stripeCustomerId = $customer->getCustomAttribute('stripe_customer_id')->getValue();
 
     if(!$stripeCustomerId) {
       $stripeCustomerId = $this->createNewStripeCustomer($customer->getEmail());

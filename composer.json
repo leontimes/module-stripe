@@ -19,7 +19,7 @@
     "magento/module-quote": "~100.0.0|~100.1.0",
     "magento/module-ui": "~100.0.0|~100.1.0",
     "magento/module-vault": "100.1.*",
-    "stripe/stripe-php": "3.7.0"
+    "stripe/stripe-php": "4.13.0"
   },
   "autoload": {
     "files": [
